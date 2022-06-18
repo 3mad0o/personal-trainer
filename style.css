@@ -1,0 +1,223 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.intro {
+  color: #dc3545 !important;
+  height: 100vh;
+  background: url("photos/1.jpg");
+  background-size: cover;
+  position: relative;
+  font-size: 20px;
+}
+
+.intro .nav {
+  z-index: 99;
+}
+
+.intro .con h3 {
+  font-size: 75px;
+  color: red;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.intro .con button {
+  background-color: red;
+  color: #fff;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .6;
+}
+
+.offers {
+  background-color: #000;
+}
+
+.offers .heading h3 {
+  font-size: 100px;
+  color: #dc3545;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.offers .cardd {
+  color: #fff;
+  text-align: center;
+}
+
+.offers .cardd img {
+  width: 100%;
+}
+
+.offers .cardd h3 {
+  text-transform: uppercase;
+}
+
+.pricing {
+  background-color: #000;
+}
+
+.pricing .heading h3 {
+  font-size: 100px;
+  color: red;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.pricing .prices .cardd {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 1px solid #fff;
+}
+
+.pricing .prices .cardd i {
+  font-size: 30px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  padding: 20px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.pricing .prices .cardd ul li {
+  list-style-type: none;
+}
+
+.pricing .prices .cardd ul li i {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.pricing .prices .cardd button {
+  background-color: red;
+  color: #fff;
+}
+
+.gallery {
+  background-color: #000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.gallery .photos img {
+  margin-top: 20px;
+}
+
+.about {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .heading {
+  text-align: center;
+}
+
+.about .heading h3 {
+  font-size: 100px;
+  color: red;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.about .me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.about .me .parag p {
+  color: #fff;
+  font-size: 30px;
+}
+
+.about .me .parag button {
+  width: 150px;
+  height: 50px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: red;
+  color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  .intro {
+    background-position: right;
+  }
+  .intro .con h3 {
+    font-size: 40px;
+  }
+  .intro .con p {
+    font-size: 15px;
+  }
+  .offers .heading h3 {
+    font-size: 70px;
+  }
+  .pricing .heading h3 {
+    font-size: 70px;
+  }
+  .about .heading h3 {
+    font-size: 70px;
+  }
+  .about .me .parag p {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

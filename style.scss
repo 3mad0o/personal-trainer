@@ -1,0 +1,218 @@
+$red:#dc3545;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000;
+}
+.intro{
+    color: $red !important;
+    height: 100vh;
+    background: url('photos/1.jpg');
+    background-size: cover;
+    position: relative;
+    font-size: 20px;
+    .nav{
+        z-index: 99;
+    }
+    .con{
+        h3{
+            font-size: 75px;
+            color:red;
+            text-transform: uppercase;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;  
+        }
+        button{
+            background-color: red;
+            color: #fff;
+        }
+    }
+}
+.intro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .6;
+
+}
+.offers{
+    background-color: #000;
+    
+}
+.offers .heading{
+    h3{
+        font-size: 100px;
+        color:$red;
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+.offers .cardd{
+    color: #fff;
+    text-align: center;
+    
+    img{
+        width: 100%;
+        
+    }
+    h3{
+        text-transform: uppercase;
+    }
+    
+}
+.pricing{
+    background-color: #000;
+    .heading{
+        h3{
+            font-size: 100px;
+            color:red;
+            text-transform: uppercase;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px; 
+        }
+    }
+    .prices{
+        .cardd{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            border: 1px solid #fff;
+            i{
+                
+                font-size: 30px;
+                transform: rotate(-45deg);
+                padding: 20px;
+                background-color: red;
+                border-radius: 100%;
+            }
+            ul li{
+                list-style-type:none;
+                i{
+                    font-size: 15px;
+                    padding: 5px;
+                    border-radius: 50%; 
+                    margin-right: 10px;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+            button{
+                background-color: red;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.gallery{
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .photos{
+        
+        img{
+            
+            margin-top: 20px;
+        }
+    }
+}
+
+.about{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .heading{
+        text-align: center;
+        h3{
+            font-size: 100px;
+            color:red;
+            text-transform: uppercase;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;  
+        }
+    }
+    .me{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        img{
+        }
+        .parag{
+            
+            p{
+                color: #fff;
+                font-size: 30px;
+                
+            }
+            button{
+                width: 150px;
+                height: 50px;
+                align-self: flex-start;
+                background-color: red;  
+                color: #fff;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:750px) {
+    .intro{
+        background-position: right  ;
+    }
+    .intro .con { 
+    h3{
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+.offers{
+    .heading{
+        h3{
+            font-size: 70px;
+        }
+    }
+    .cards{
+        .cardd{
+            
+        }
+    }
+}
+
+
+.pricing{
+    .heading{
+        h3{
+            font-size:70px ;
+        }
+    }
+}
+.about .heading{
+    h3{
+        font-size: 70px;
+    }
+}
+.about .me .parag
+{
+    p{
+        font-size: 20px;
+    }
+}
+
+}
